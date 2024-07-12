@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/*      hero    */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-title {
+  text-align: center;
+}
+
+.hero-description {
+  display: flex;
+  width: 40%;
+}
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-video video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-image {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.hero-features {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+.hero-features li {
+  display: flex;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-features li:hover {
+  background-color: #007bff;
+}
+
+/*      btn     */
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #007bff7e;
+}
+
+.btn--width {
+  text-align: center;
+  width: 50%;
+}
+
+/*      ingredients     */
+
+.ingredients {
+  padding: 4rem 2rem;
+  background: url(/assets/images/pattern.png) center center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ingredients-item span {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #000;
+}
+
+.ingredients-product--center {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredients-image {
+  max-width: 200px;
+  margin-bottom: 2rem;
+}
+
+.ingredients-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.ingredients-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.ingredients-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 110px;
+  height: 110px;
+
+  background-color: #0688fa;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.ingredients-cta {
+  display: inline-block;
+  background-color: #fff;
+  color: #007bff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+}
+
+/*    reviews     */
+
+.reviews {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #673ab7, #9c27b0);
+  color: #fff;
+}
+
+.reviews-slider {
+  display: flex;
+
+  overflow-x: auto;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reviews-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.reviews-slider {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reviews-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.reviews-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.reviews-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.reviews-text {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/*     promo     */
+
+.promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background: url(./assets/images/pattern-promo.png) center center/cover
+    no-repeat;
+
+  height: 100vh;
+}
+
+.promo-doctor {
+  display: flex;
+}
+
+.promo-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.promo-title {
+  font-size: 2rem;
+  color: #0026ff;
+  font-weight: 600;
+}
+.promo-features {
+  padding: 0.5rem;
+  background-color: #0119eb74;
+  border-radius: 24px;
+}
+
+.promo-features li {
+  font-size: 2rem;
+  color: #ff0000;
+}
+
+.promo-features li span {
+  font-size: 2rem;
+  color: #f0f1f4;
+}
+
+/*    order     */
+
+.order {
+  padding: 4rem 2rem;
+  background: linear-gradient(45deg, #2196f3, #03a9f4);
+  color: #fff;
+  text-align: center;
+}
+
+.order-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.order-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.order-timer-label {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.order-timer-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #2196f3;
+  border-radius: 0.25rem;
+  animation: timer-animation 1s infinite;
+}
+
+@keyframes timer-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.order-image {
+  max-width: 200px;
+  margin-bottom: 2rem;
+}
+
+.order-prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.order-price--old {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  margin-right: 1rem;
+}
+
+.order-price--new {
+  font-size: 2rem;
+  font-weight: bold;
+  animation: price-animation 2s infinite;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  position: relative;
+}
+
+.order-input:focus + .order-input-tooltip {
+  display: block;
+}
+
+.order-input-tooltip {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  background-color: #fff;
+  color: #2196f3;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  display: none;
+}
+
+.order-submit {
+  background-color: #fff;
+  color: #2196f3;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
